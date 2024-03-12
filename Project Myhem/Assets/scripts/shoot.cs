@@ -46,7 +46,7 @@ public class shoot : MonoBehaviour
 
         if (Physics.Raycast(_cam.transform.position, _cam.transform.forward, out hit,range))
         {
-            Debug.Log("¿¿¿ ’Œ’À€ "+ hit.collider);
+            
 
             GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impact, 1f);
