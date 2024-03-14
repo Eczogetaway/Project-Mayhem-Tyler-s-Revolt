@@ -3,7 +3,9 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - SC_FPSController
     - SoundRun
+    - camera
     - menusetings
+    - pause_menu
     - shoot
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.PlasticWindow
@@ -77,6 +79,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: menusetings
     methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: pause_menu
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: pause_menu
+    methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: pause_menu
+    methodName: Restart
   sceneClasses:
     Assets/Scene/1 Level.unity:
     - Class: 1
@@ -120,14 +131,28 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1604}
     - Class: 114
+      Script: {instanceID: 2604}
+    - Class: 114
       Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 4852}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 5806}
+      Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 7476}
+      Script: {instanceID: 4854}
+    - Class: 114
+      Script: {instanceID: 5042}
+    - Class: 114
+      Script: {instanceID: 5740}
+    - Class: 114
+      Script: {instanceID: 5810}
+    - Class: 114
+      Script: {instanceID: 6058}
+    - Class: 114
+      Script: {instanceID: 7480}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -178,6 +203,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -195,28 +224,42 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3978}
     - Class: 114
-      Script: {instanceID: 4084}
+      Script: {instanceID: 4086}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 5042}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5698}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 7216}
+      Script: {instanceID: 6058}
+    - Class: 114
+      Script: {instanceID: 7220}
+    - Class: 114
+      Script: {instanceID: 7480}
+    - Class: 114
+      Script: {instanceID: 35376}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -525,6 +568,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptMachine
+  - hash:
+      serializedVersion: 2
+      Hash: bdd9d66a40a7e1bf1eae53ff03bc96c0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: pause_menu
   - hash:
       serializedVersion: 2
       Hash: 43ebd945b04bced376c791411cf5a289
@@ -935,6 +984,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: ebddf7532553a764a019e3f37dc049f5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: camera
+  - hash:
+      serializedVersion: 2
       Hash: 9637dcdf3068a91dfe653e61bb82f13d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1280,4 +1335,4 @@ ScriptsOnlyBuild:
   - Assets/Scene/Menu.unity
   - Assets/Scene/1 Level.unity
   playerPath: "C:/Users/strea/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/Project Myhem/Project Myhem.exe"
+    \u0441\u0442\u043E\u043B/build/Project Myhem.exe"
