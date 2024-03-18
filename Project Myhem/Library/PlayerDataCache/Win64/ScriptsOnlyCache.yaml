@@ -142,41 +142,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1604}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 4854}
+      Script: {instanceID: 3500}
     - Class: 114
-      Script: {instanceID: 5042}
+      Script: {instanceID: 4104}
     - Class: 114
-      Script: {instanceID: 5740}
+      Script: {instanceID: 4128}
     - Class: 114
-      Script: {instanceID: 5810}
+      Script: {instanceID: 4878}
     - Class: 114
-      Script: {instanceID: 6058}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 6462}
+      Script: {instanceID: 5772}
     - Class: 114
-      Script: {instanceID: 6766}
+      Script: {instanceID: 5844}
     - Class: 114
-      Script: {instanceID: 7480}
+      Script: {instanceID: 6096}
     - Class: 114
-      Script: {instanceID: 24416}
+      Script: {instanceID: 6500}
     - Class: 114
-      Script: {instanceID: 24436}
+      Script: {instanceID: 6804}
     - Class: 114
-      Script: {instanceID: 24460}
+      Script: {instanceID: 7122}
     - Class: 114
-      Script: {instanceID: 24464}
+      Script: {instanceID: 7286}
     - Class: 114
-      Script: {instanceID: 24918}
+      Script: {instanceID: 7526}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -243,33 +243,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 2184}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2188}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 3978}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 4086}
+      Script: {instanceID: 3992}
     - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 5042}
+      Script: {instanceID: 4358}
     - Class: 114
-      Script: {instanceID: 5698}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5740}
+      Script: {instanceID: 5730}
     - Class: 114
-      Script: {instanceID: 6058}
+      Script: {instanceID: 5772}
     - Class: 114
-      Script: {instanceID: 7220}
+      Script: {instanceID: 6096}
     - Class: 114
-      Script: {instanceID: 7480}
+      Script: {instanceID: 7272}
     - Class: 114
-      Script: {instanceID: 59910}
+      Script: {instanceID: 7526}
+    - Class: 114
+      Script: {instanceID: 43916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -287,6 +289,8 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -307,6 +311,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 915204dac8acad99f076d6e72ada0a0f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -543,12 +553,6 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 915204dac8acad99f076d6e72ada0a0f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: 593a641cd7822a10b9a54aa9eb5c3d5e
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -631,6 +635,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TextMeshProFloatingText
+  - hash:
+      serializedVersion: 2
+      Hash: 08f8bf32daa10aa3ae37dc333daf1ff9
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: ConversationManager
   - hash:
       serializedVersion: 2
       Hash: e6f8333cc8a800e2866870a5ef7efc35
@@ -747,6 +757,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 08dc6c204d1cac86ac4d1aa6b447a63f
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: UIConversationButton
+  - hash:
+      serializedVersion: 2
       Hash: ca7965796a6fc0e5baad4cb19f5b5ded
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -757,6 +773,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: CameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 83b8c9bb5fb648e9f6a8399ce9259251
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: NPCConversation
   - hash:
       serializedVersion: 2
       Hash: 9ebc0a3016506a0cbb7e0306dfcb9497
@@ -1233,16 +1255,34 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: ecc127a80526134346db2ec48d19c2c8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConversentionStarter
+  - hash:
+      serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 487c6deb30c86de77e2cd60a19359435
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: ExampleInputManager
+  - hash:
+      serializedVersion: 2
       Hash: 0718c61d3c7f80d6ebfd9ad4897a60e4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: menusetings
+  - hash:
+      serializedVersion: 2
+      Hash: de4df9a7266a161177820c322e021ff8
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: NodeEventHolder
   - hash:
       serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
@@ -1357,42 +1397,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: de4df9a7266a161177820c322e021ff8
-    assemblyName: Assembly-CSharp
-    namespaceName: DialogueEditor
-    className: NodeEventHolder
-  - hash:
-      serializedVersion: 2
-      Hash: 83b8c9bb5fb648e9f6a8399ce9259251
-    assemblyName: Assembly-CSharp
-    namespaceName: DialogueEditor
-    className: NPCConversation
-  - hash:
-      serializedVersion: 2
-      Hash: 487c6deb30c86de77e2cd60a19359435
-    assemblyName: Assembly-CSharp
-    namespaceName: DialogueEditor
-    className: ExampleInputManager
-  - hash:
-      serializedVersion: 2
-      Hash: 08f8bf32daa10aa3ae37dc333daf1ff9
-    assemblyName: Assembly-CSharp
-    namespaceName: DialogueEditor
-    className: ConversationManager
-  - hash:
-      serializedVersion: 2
-      Hash: 08dc6c204d1cac86ac4d1aa6b447a63f
-    assemblyName: Assembly-CSharp
-    namespaceName: DialogueEditor
-    className: UIConversationButton
-  - hash:
-      serializedVersion: 2
-      Hash: ecc127a80526134346db2ec48d19c2c8
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ConversentionStarter
   platform: 19
   scenePathNames:
   - Assets/Scene/Menu.unity
