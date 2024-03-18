@@ -1,6 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - DialogueEditor.DialogueEditorWindow
     Assembly-CSharp.dll:
+    - ConversentionStarter
+    - DialogueEditor.ConversationManager
+    - DialogueEditor.NPCConversation
+    - DialogueEditor.NodeEventHolder
+    - DialogueEditor.UIConversationButton
     - SC_FPSController
     - SoundRun
     - camera
@@ -35,11 +42,13 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -60,12 +69,16 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.Events.UnityEvent
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.EventSystems.EventTrigger/Entry
+    - UnityEngine.EventSystems.EventTrigger/TriggerEvent
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
@@ -149,7 +162,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6058}
     - Class: 114
+      Script: {instanceID: 6462}
+    - Class: 114
+      Script: {instanceID: 6766}
+    - Class: 114
       Script: {instanceID: 7480}
+    - Class: 114
+      Script: {instanceID: 24416}
+    - Class: 114
+      Script: {instanceID: 24436}
+    - Class: 114
+      Script: {instanceID: 24460}
+    - Class: 114
+      Script: {instanceID: 24464}
+    - Class: 114
+      Script: {instanceID: 24918}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -242,7 +269,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7480}
     - Class: 114
-      Script: {instanceID: 24582}
+      Script: {instanceID: 59910}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1330,9 +1357,45 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: de4df9a7266a161177820c322e021ff8
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: NodeEventHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 83b8c9bb5fb648e9f6a8399ce9259251
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: NPCConversation
+  - hash:
+      serializedVersion: 2
+      Hash: 487c6deb30c86de77e2cd60a19359435
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: ExampleInputManager
+  - hash:
+      serializedVersion: 2
+      Hash: 08f8bf32daa10aa3ae37dc333daf1ff9
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: ConversationManager
+  - hash:
+      serializedVersion: 2
+      Hash: 08dc6c204d1cac86ac4d1aa6b447a63f
+    assemblyName: Assembly-CSharp
+    namespaceName: DialogueEditor
+    className: UIConversationButton
+  - hash:
+      serializedVersion: 2
+      Hash: ecc127a80526134346db2ec48d19c2c8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConversentionStarter
   platform: 19
   scenePathNames:
   - Assets/Scene/Menu.unity
   - Assets/Scene/1 Level.unity
   playerPath: "C:/Users/strea/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/build/Project Myhem.exe"
+    \u0441\u0442\u043E\u043B/Alpha 1/Project Myhem.exe"
