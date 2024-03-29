@@ -2150,8 +2150,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.98842895, b: 0.7156334, a: 1}
-  m_Intensity: 0.5
+  m_Color: {r: 0.7196765, g: 0.70664245, b: 0.40251443, a: 1}
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2200,7 +2200,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
-  m_ShadowAngle: 0
+  m_ShadowAngle: 1
 --- !u!4 &1004422727
 Transform:
   m_ObjectHideFlags: 0

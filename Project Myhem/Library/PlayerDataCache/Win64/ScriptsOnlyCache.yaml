@@ -12,8 +12,13 @@ ScriptsOnlyBuild:
     - SoundRun
     - camera
     - menusetings
+    - npc
     - pause_menu
     - shoot
+    Unity.AI.Navigation.Editor.dll:
+    - Unity.AI.Navigation.Editor.NavMeshAssetManager
+    Unity.AI.Navigation.dll:
+    - Unity.AI.Navigation.NavMeshSurface
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
@@ -146,37 +151,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3500}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 4104}
+      Script: {instanceID: 4138}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 4878}
+      Script: {instanceID: 4918}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 5116}
+    - Class: 114
+      Script: {instanceID: 5298}
     - Class: 114
       Script: {instanceID: 5844}
     - Class: 114
-      Script: {instanceID: 6096}
+      Script: {instanceID: 5918}
     - Class: 114
-      Script: {instanceID: 6500}
+      Script: {instanceID: 6174}
     - Class: 114
-      Script: {instanceID: 6804}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 7122}
+      Script: {instanceID: 6892}
     - Class: 114
-      Script: {instanceID: 7286}
+      Script: {instanceID: 7214}
     - Class: 114
-      Script: {instanceID: 7526}
+      Script: {instanceID: 7380}
+    - Class: 114
+      Script: {instanceID: 7620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -188,6 +197,8 @@ ScriptsOnlyBuild:
     - Class: 143
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 195
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
@@ -202,6 +213,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
     Assets/Scene/Menu.unity:
     - Class: 1
@@ -247,31 +260,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2188}
+      Script: {instanceID: 2202}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 4024}
     - Class: 114
-      Script: {instanceID: 4100}
+      Script: {instanceID: 4134}
     - Class: 114
-      Script: {instanceID: 4358}
+      Script: {instanceID: 4394}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5730}
+      Script: {instanceID: 5802}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 5844}
     - Class: 114
-      Script: {instanceID: 6096}
+      Script: {instanceID: 6174}
     - Class: 114
-      Script: {instanceID: 7272}
+      Script: {instanceID: 7366}
     - Class: 114
-      Script: {instanceID: 7526}
+      Script: {instanceID: 7620}
     - Class: 114
-      Script: {instanceID: 43916}
+      Script: {instanceID: 40158}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -871,6 +884,12 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
+      Hash: 8a2f78c25d5e92eb97ee5544a162a2e9
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshLink
+  - hash:
+      serializedVersion: 2
       Hash: f2098fcd8ee983a05ec192f63904298f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -961,10 +980,22 @@ ScriptsOnlyBuild:
     className: WarpTextExample
   - hash:
       serializedVersion: 2
+      Hash: 8258fb4d5398ec0f06000f8d62fe95f2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: npc
+  - hash:
+      serializedVersion: 2
       Hash: 17f82e3e7d8f8b07a270a4aad9bfe79d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 061a5d77ce0aa52a60c21c566c6d8af2
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshModifierVolume
   - hash:
       serializedVersion: 2
       Hash: 0dd14e314956b0d0d83ffcffe60aa46f
@@ -983,6 +1014,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: d55992199bd2f5a5502658391cdf8ba7
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshSurface
   - hash:
       serializedVersion: 2
       Hash: 9dd54ce33440072d6692a67e0c384ad1
@@ -1091,6 +1128,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 68f2cb287af2eee1f639824485a3402b
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshModifier
   - hash:
       serializedVersion: 2
       Hash: 672716ae97f6ddb615fa5ac3ec9da349

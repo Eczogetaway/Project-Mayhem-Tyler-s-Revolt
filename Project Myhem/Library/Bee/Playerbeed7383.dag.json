@@ -150,7 +150,8 @@
         142,
         143,
         144,
-        145
+        145,
+        146
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -376,7 +377,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 16071,
+      "PayloadLength": 16194,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -480,6 +481,7 @@
         "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
         "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
         "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
         "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
         "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
         "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
@@ -1422,6 +1424,18 @@
       "DebugActionIndex": 92
     },
     {
+      "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.AI.Navigation.dll",
+      "DisplayName": "Copying Unity.AI.Navigation.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll"
+      ],
+      "Outputs": [
+        "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.AI.Navigation.dll"
+      ],
+      "DebugActionIndex": 93
+    },
+    {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.TextMeshPro.dll",
       "DisplayName": "Copying Unity.TextMeshPro.dll",
       "ActionType": "CopyFiles",
@@ -1431,7 +1445,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1443,7 +1457,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.State.dll",
@@ -1455,7 +1469,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.State.dll"
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -1467,7 +1481,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.Flow.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -1479,7 +1493,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/netstandard.dll",
@@ -1491,7 +1505,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Mono.Security.dll",
@@ -1503,7 +1517,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1515,7 +1529,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Configuration.dll",
@@ -1527,7 +1541,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Core.dll",
@@ -1539,7 +1553,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1551,7 +1565,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Data.dll",
@@ -1563,7 +1577,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Drawing.dll",
@@ -1575,7 +1589,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.EnterpriseServices.dll",
@@ -1587,7 +1601,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1599,7 +1613,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.IO.Compression.dll",
@@ -1611,7 +1625,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Net.Http.dll",
@@ -1623,7 +1637,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Numerics.dll",
@@ -1635,7 +1649,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Runtime.Serialization.dll",
@@ -1647,7 +1661,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Security.dll",
@@ -1659,7 +1673,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.ServiceModel.Internals.dll",
@@ -1671,7 +1685,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Transactions.dll",
@@ -1683,7 +1697,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Xml.Linq.dll",
@@ -1695,7 +1709,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Xml.dll",
@@ -1707,7 +1721,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.dll",
@@ -1719,7 +1733,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/mscorlib.dll",
@@ -1731,20 +1745,20 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 16243,
+      "PayloadOffset": 16366,
       "PayloadLength": 25,
       "PayloadDebugContentSnippet": "Exozgetaway\nProject Myhem",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/app.info",
@@ -1757,9 +1771,9 @@
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/app.info"
       ],
       "ToBuildDependencies": [
-        119
+        120
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Resources/unity default resources",
@@ -1771,7 +1785,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem.exe",
@@ -1783,7 +1797,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/Project Myhem.exe"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -1795,7 +1809,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -1807,7 +1821,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -1819,7 +1833,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -1831,7 +1845,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -1843,7 +1857,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -1855,7 +1869,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -1867,7 +1881,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -1879,7 +1893,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -1891,7 +1905,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -1903,7 +1917,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -1915,7 +1929,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -1927,7 +1941,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -1939,7 +1953,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -1951,7 +1965,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -1963,7 +1977,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -1975,7 +1989,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -1987,7 +2001,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -1999,7 +2013,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/config",
@@ -2011,7 +2025,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -2023,7 +2037,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/UnityCrashHandler64.exe",
@@ -2035,7 +2049,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/UnityPlayer.dll",
@@ -2047,7 +2061,7 @@
       "Outputs": [
         "C:/Users/strea/OneDrive/Рабочий стол/Alpha 1/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "Player",
@@ -2171,7 +2185,7 @@
         116,
         117,
         118,
-        120,
+        119,
         121,
         122,
         123,
@@ -2195,10 +2209,11 @@
         141,
         142,
         143,
-        144
+        144,
+        145
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 145
+      "DebugActionIndex": 146
     }
   ],
   "FileSignatures": [
@@ -2399,7 +2414,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 145
+          "Player": 146
         }
 ,  "DefaultNodes": [
     0
