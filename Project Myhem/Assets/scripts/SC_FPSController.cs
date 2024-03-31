@@ -13,6 +13,9 @@ public class SC_FPSController : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
+    public float crouchHeight = 0.5f; // Высота персонажа при приседании
+    public float standingHeight = 2.0f; // Высота персонажа при стоянии
+    public float pushPower = 2.0f; // Сила толчка
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -70,5 +73,36 @@ public class SC_FPSController : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+        // Crouch
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            characterController.height = crouchHeight;
+        }
+        else
+        {
+            characterController.height = standingHeight;
+        }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody body = hit.collider.attachedRigidbody;
+
+        // Check whether Rigidbody exists and if it's not kinematic
+        if (body == null || body.isKinematic)
+        {
+            return;
+        }
+
+        // We dont want to push objects below us
+        if (hit.moveDirection.y < -0.3)
+        {
+            return;
+        }
+
+        // Calculate push direction and apply push force
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+        body.velocity = pushDir * pushPower;
     }
 }

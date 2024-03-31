@@ -1,25 +1,47 @@
-using System.Collections;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.AI;
+using System.Collections;
 
-public class npc : MonoBehaviour
+public class NPC : MonoBehaviour
 {
-    //Transform that NPC has to follow
-    public Transform transformToFollow;
-    //NavMesh Agent variable
-    NavMeshAgent agent;
+    public float speed = 3.0f;
+    private Vector3 targetPosition;
+    private float changeTargetSqrDistance = 0.1f; // Минимальное расстояние до цели, при котором выбирается новая цель
 
-    // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>(); 
+        // Задаем случайную цель в пределах области
+        targetPosition = GetRandomPosition();
+
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Follow the player
-        agent.destination = transformToFollow.position;
+        // Перемещаем NPC к цели
+        float step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+
+        // Если NPC достиг цели, задаем новую цель
+        if ((transform.position - targetPosition).sqrMagnitude < changeTargetSqrDistance)
+        {
+            StartCoroutine(ChangeTarget());
+        }
+
+        // Проверяем, не упал ли NP C под пол
+        if (transform.position.y < 0)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+    }
+
+    IEnumerator ChangeTarget()
+    {
+        yield return new WaitForSeconds(1); // Задержка в 1 секунду перед выбором новой цели
+        targetPosition = GetRandomPosition();
+    }
+
+    Vector3 GetRandomPosition()
+    {
+        return new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
     }
 }

@@ -8,15 +8,15 @@ ScriptsOnlyBuild:
     - DialogueEditor.NPCConversation
     - DialogueEditor.NodeEventHolder
     - DialogueEditor.UIConversationButton
+    - Pedestrian
     - SC_FPSController
+    - SettingsMenu
     - SoundRun
+    - Target
     - camera
     - menusetings
-    - npc
     - pause_menu
     - shoot
-    Unity.AI.Navigation.Editor.dll:
-    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.PlasticSCM.Editor.dll:
@@ -35,12 +35,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -53,6 +47,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.TextMeshPro:
@@ -87,9 +84,12 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
+    - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: menusetings
@@ -145,47 +145,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
-    - Class: 114
       Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 2832}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 3370}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3372}
     - Class: 114
-      Script: {instanceID: 4138}
+      Script: {instanceID: 3528}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 4140}
     - Class: 114
-      Script: {instanceID: 4918}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 4922}
     - Class: 114
-      Script: {instanceID: 5116}
+      Script: {instanceID: 5120}
     - Class: 114
-      Script: {instanceID: 5298}
+      Script: {instanceID: 5302}
     - Class: 114
-      Script: {instanceID: 5844}
+      Script: {instanceID: 5756}
     - Class: 114
-      Script: {instanceID: 5918}
+      Script: {instanceID: 5850}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 5924}
     - Class: 114
-      Script: {instanceID: 6586}
+      Script: {instanceID: 6180}
     - Class: 114
-      Script: {instanceID: 6892}
+      Script: {instanceID: 6592}
     - Class: 114
-      Script: {instanceID: 7214}
+      Script: {instanceID: 6850}
     - Class: 114
-      Script: {instanceID: 7380}
+      Script: {instanceID: 6900}
     - Class: 114
-      Script: {instanceID: 7620}
+      Script: {instanceID: 7222}
+    - Class: 114
+      Script: {instanceID: 7388}
+    - Class: 114
+      Script: {instanceID: 7628}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -254,37 +256,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
-    - Class: 114
       Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2832}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 4024}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 4026}
     - Class: 114
-      Script: {instanceID: 4394}
+      Script: {instanceID: 4136}
     - Class: 114
-      Script: {instanceID: 5116}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 4398}
     - Class: 114
-      Script: {instanceID: 5844}
+      Script: {instanceID: 4990}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 5042}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 5120}
     - Class: 114
-      Script: {instanceID: 7620}
+      Script: {instanceID: 5388}
     - Class: 114
-      Script: {instanceID: 40158}
+      Script: {instanceID: 5808}
+    - Class: 114
+      Script: {instanceID: 5850}
+    - Class: 114
+      Script: {instanceID: 6180}
+    - Class: 114
+      Script: {instanceID: 7374}
+    - Class: 114
+      Script: {instanceID: 7628}
+    - Class: 114
+      Script: {instanceID: 23614}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -800,6 +810,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: 635750b6c65a2c02ad2eabdca0d0cf0b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SettingsMenu
+  - hash:
+      serializedVersion: 2
       Hash: e7e95903ca66d58e1a7cbd71f824e16d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -914,7 +930,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: b66e612794081f572acfbad0753b08b9
+      Hash: ec054fab53cf11aa5de66e08a0eb67d7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SC_FPSController
@@ -980,10 +996,10 @@ ScriptsOnlyBuild:
     className: WarpTextExample
   - hash:
       serializedVersion: 2
-      Hash: 8258fb4d5398ec0f06000f8d62fe95f2
+      Hash: 70c46ac3610dd2a57bffd04401124c49
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: npc
+    className: NPC
   - hash:
       serializedVersion: 2
       Hash: 17f82e3e7d8f8b07a270a4aad9bfe79d
@@ -1056,6 +1072,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: b78bc4a7ab7869c5f266197992a767a6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Pedestrian
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -1242,6 +1264,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro
     className: TMP_TextEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 971080e00b09ca0675f0381e18d1f581
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Target
   - hash:
       serializedVersion: 2
       Hash: ee34255e3e86289bde9bad5e07b84cbc
@@ -1445,4 +1473,4 @@ ScriptsOnlyBuild:
   - Assets/Scene/Menu.unity
   - Assets/Scene/1 Level.unity
   playerPath: "C:/Users/strea/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/Alpha 1/Project Myhem.exe"
+    \u0441\u0442\u043E\u043B/Project Myhem/Project Myhem.exe"

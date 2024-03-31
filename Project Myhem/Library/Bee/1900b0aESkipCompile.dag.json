@@ -24,10 +24,10 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\ScriptAssemblies\" -s=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\" -s=\"C:\\Users\\strea\\OneDrive\\Рабочий стол\\Project Myhem\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"G:/Unity Hub/Editor/2022.3.19f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"G:\\Unity Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"G:\\Unity Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"G:\\Unity Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"G:\\Unity Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"G:\\Unity Hub\\Editor\\2022.3.19f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\ScriptAssemblies\" -s=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\" -s=\"G:\\Github\\Project-Mayhem-Tyler-s-Revolt\\Project Myhem\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
+        "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
         "Library/ScriptAssemblies/Unity.AI.Navigation.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
@@ -63,106 +63,106 @@
   ],
   "FileSignatures": [
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/BeeLocalCacheTool.exe"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/BeeLocalCacheTool.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
+      "File": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
     },
     {
       "File": "Library/Bee/1900b0aESkipCompile-inputdata.json"
@@ -217,7 +217,7 @@
   ],
   "GlobSignatures": [
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline"
+      "Path": "G:/Unity Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline"
     }
   ],
   "ContentDigestExtensions": [
@@ -247,6 +247,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aESkipCompile.dag.json",
-  "PayloadsFile": "C:/Users/strea/OneDrive/Рабочий стол/Project Myhem/Library/Bee/1900b0aESkipCompile.dag.payloads",
+  "PayloadsFile": "G:/Github/Project-Mayhem-Tyler-s-Revolt/Project Myhem/Library/Bee/1900b0aESkipCompile.dag.payloads",
   "RelativePathToRoot": "../.."
 }
