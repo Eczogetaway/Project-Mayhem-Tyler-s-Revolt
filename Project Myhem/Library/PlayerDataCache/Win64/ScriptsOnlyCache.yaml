@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - DialogueEditor.NPCConversation
     - DialogueEditor.NodeEventHolder
     - DialogueEditor.UIConversationButton
+    - LoadingScreen
     - Pedestrian
     - SC_FPSController
     - SettingsMenu
@@ -45,9 +46,12 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -84,10 +88,14 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.Dropdown/DropdownEvent
+    - UnityEngine.UI.Dropdown/OptionData
+    - UnityEngine.UI.Dropdown/OptionDataList
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
-    - UnityEngine.UI.Slider/SliderEvent
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
@@ -98,8 +106,20 @@ ScriptsOnlyBuild:
     fullTypeName: menusetings
     methodName: ExitGame
   - assembly: Assembly-CSharp
+    fullTypeName: menusetings
+    methodName: SettingsPanel
+  - assembly: Assembly-CSharp
+    fullTypeName: menusetings
+    methodName: Exit
+  - assembly: Assembly-CSharp
     fullTypeName: pause_menu
     methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: menusetings
+    methodName: Exit
+  - assembly: Assembly-CSharp
+    fullTypeName: menusetings
+    methodName: SettingsPanel
   - assembly: Assembly-CSharp
     fullTypeName: pause_menu
     methodName: Resume
@@ -149,25 +169,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 1610}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3528}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 4140}
+      Script: {instanceID: 3530}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 3904}
+    - Class: 114
+      Script: {instanceID: 4142}
+    - Class: 114
+      Script: {instanceID: 4166}
     - Class: 114
       Script: {instanceID: 4922}
+    - Class: 114
+      Script: {instanceID: 4990}
     - Class: 114
       Script: {instanceID: 5120}
     - Class: 114
       Script: {instanceID: 5302}
+    - Class: 114
+      Script: {instanceID: 5388}
     - Class: 114
       Script: {instanceID: 5756}
     - Class: 114
@@ -177,17 +205,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6180}
     - Class: 114
+      Script: {instanceID: 6188}
+    - Class: 114
       Script: {instanceID: 6592}
     - Class: 114
       Script: {instanceID: 6850}
     - Class: 114
       Script: {instanceID: 6900}
     - Class: 114
-      Script: {instanceID: 7222}
+      Script: {instanceID: 6950}
     - Class: 114
-      Script: {instanceID: 7388}
+      Script: {instanceID: 7224}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 7246}
+    - Class: 114
+      Script: {instanceID: 7376}
+    - Class: 114
+      Script: {instanceID: 7390}
+    - Class: 114
+      Script: {instanceID: 7630}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,6 +253,63 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 238
+      Script: {instanceID: 0}
+    Assets/Scene/Loading.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1564}
+    - Class: 114
+      Script: {instanceID: 2628}
+    - Class: 114
+      Script: {instanceID: 2836}
+    - Class: 114
+      Script: {instanceID: 5120}
+    - Class: 114
+      Script: {instanceID: 5850}
+    - Class: 114
+      Script: {instanceID: 6180}
+    - Class: 114
+      Script: {instanceID: 7152}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scene/Menu.unity:
     - Class: 1
@@ -260,25 +353,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 1610}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 3904}
     - Class: 114
-      Script: {instanceID: 4236}
+      Script: {instanceID: 4028}
+    - Class: 114
+      Script: {instanceID: 4138}
     - Class: 114
       Script: {instanceID: 4398}
     - Class: 114
       Script: {instanceID: 4990}
-    - Class: 114
-      Script: {instanceID: 5042}
     - Class: 114
       Script: {instanceID: 5120}
     - Class: 114
@@ -290,11 +383,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6180}
     - Class: 114
-      Script: {instanceID: 7374}
+      Script: {instanceID: 6188}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 6950}
     - Class: 114
-      Script: {instanceID: 23614}
+      Script: {instanceID: 7246}
+    - Class: 114
+      Script: {instanceID: 7376}
+    - Class: 114
+      Script: {instanceID: 7630}
+    - Class: 114
+      Script: {instanceID: 27730}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -340,6 +439,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 1c4078ca61112890843e25e4a50da782
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SettingsMenu
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -624,7 +729,7 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
-      Hash: bdd9d66a40a7e1bf1eae53ff03bc96c0
+      Hash: 46df8934d395226531e98854c37064ff
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: pause_menu
@@ -808,12 +913,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: DictionaryAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 635750b6c65a2c02ad2eabdca0d0cf0b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SettingsMenu
   - hash:
       serializedVersion: 2
       Hash: e7e95903ca66d58e1a7cbd71f824e16d
@@ -1320,6 +1419,12 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
+      Hash: bfcaae115c33c852f62a87eda27352b4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LoadingScreen
+  - hash:
+      serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1344,7 +1449,7 @@ ScriptsOnlyBuild:
     className: ExampleInputManager
   - hash:
       serializedVersion: 2
-      Hash: 0718c61d3c7f80d6ebfd9ad4897a60e4
+      Hash: ec505e793d68578bf0865a3922df4c9b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: menusetings
@@ -1471,6 +1576,7 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scene/Menu.unity
+  - Assets/Scene/Loading.unity
   - Assets/Scene/1 Level.unity
   playerPath: "C:/Users/strea/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
     \u0441\u0442\u043E\u043B/Project Myhem/Project Myhem.exe"

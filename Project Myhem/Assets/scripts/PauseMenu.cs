@@ -10,6 +10,7 @@ public class pause_menu : MonoBehaviour
     public GameObject Crosshair;
     public GameObject Player;
     public GameObject Pistol;
+    public GameObject settingsPanel;
     // Update is called once per frame
     void Update()
     {
@@ -18,12 +19,21 @@ public class pause_menu : MonoBehaviour
             
             if (GameIsPaused)
             {
-                Pistol.GetComponent<shoot>().enabled = true;
-                Player.GetComponent<SC_FPSController>().enabled = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                Crosshair.gameObject.SetActive(true);
-                Resume();
+                if (menusetings.isOpenSettings)
+                {
+                    settingsPanel.SetActive(false);
+                    pauseMenuUI.SetActive(true);
+                    menusetings.isOpenSettings = false;
+                } else
+                {
+
+                    Pistol.GetComponent<shoot>().enabled = true;
+                    Player.GetComponent<SC_FPSController>().enabled = true;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                    Crosshair.gameObject.SetActive(true);
+                    Resume();
+                }
 
             }
             else
