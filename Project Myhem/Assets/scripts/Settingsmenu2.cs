@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -12,13 +13,36 @@ public class SettingsMenu : MonoBehaviour
 
     private List<Resolution> resolutions = new List<Resolution>();
 
+
     void Start()
     {
         InitializeResolutions();
-        InitializeQualitySettings();
-        InitializeFullscreenToggle();
         InitializeVSyncToggle();
         InitializeFPSDropdown();
+        InitializeQualitySettings();
+        InitializeFullscreenToggle();
+
+        // Загрузить сохраненное состояние VSync и инициализировать переключатель VSync
+        int savedVSyncSetting = PlayerPrefs.GetInt("VSyncSetting", QualitySettings.vSyncCount);
+        vSyncToggle.isOn = savedVSyncSetting > 0;
+        
+
+        // Загрузить сохраненный индекс FPS и инициализировать выпадающий список FPS
+        int savedFPSIndex = PlayerPrefs.GetInt("FPSLimitIndex", Application.targetFrameRate);
+        fpsDropdown.value = savedFPSIndex;
+        
+    }
+    void Awake()
+    {
+        // Загрузить сохраненный индекс FPS
+        int savedFPSIndex = PlayerPrefs.GetInt("FPSLimitIndex", Application.targetFrameRate);
+
+        // Установить ограничение FPS
+        SetFPSLimit(savedFPSIndex);
+
+        // Загрузить сохраненное состояние VSync
+        int savedVSyncSetting = PlayerPrefs.GetInt("VSyncSetting", QualitySettings.vSyncCount);
+        SetVSync(savedVSyncSetting > 0);
     }
 
     private void InitializeResolutions()
@@ -84,16 +108,30 @@ public class SettingsMenu : MonoBehaviour
 
     private void InitializeVSyncToggle()
     {
-        vSyncToggle.isOn = QualitySettings.vSyncCount > 0;
-        vSyncToggle.onValueChanged.AddListener(SetVSync);
+        // Загрузить сохраненное состояние VSync
+        int savedVSyncSetting = PlayerPrefs.GetInt("VSyncSetting", QualitySettings.vSyncCount);
+        vSyncToggle.isOn = savedVSyncSetting > 0;
+        vSyncToggle.onValueChanged.AddListener(delegate
+        {
+            SetVSync(vSyncToggle.isOn);
+            PlayerPrefs.Save(); // Сохранить изменения на диск
+        });
     }
+
 
     private void InitializeFPSDropdown()
     {
         fpsDropdown.ClearOptions();
         fpsDropdown.AddOptions(new List<string> { "30", "60", "75", "90", "120", "144", "165", "Unlock" });
-        fpsDropdown.onValueChanged.AddListener(SetFPSLimit);
+
+        // Загрузить сохраненный индекс FPS
+        int savedFPSIndex = PlayerPrefs.GetInt("FPSLimitIndex", Application.targetFrameRate);
+        fpsDropdown.value = savedFPSIndex;
+        fpsDropdown.RefreshShownValue();
+        fpsDropdown.onValueChanged.AddListener(delegate { SetFPSLimit(fpsDropdown.value); });
+        SetFPSLimit(savedFPSIndex);
     }
+
 
     public void SetResolution(int resolutionIndex)
     {
@@ -108,18 +146,21 @@ public class SettingsMenu : MonoBehaviour
     }
     public void SetFullscreen(bool isFullscreen)
     {
-        Screen.fullScreenMode =
-isFullscreen ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed;
+        Screen.fullScreenMode = isFullscreen ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed;
     }
 
-    public void SetVSync(bool isVSync)
+    public void SetVSync(bool vSyncOn)
     {
-        QualitySettings.vSyncCount = isVSync ? 1 : 0;
+        QualitySettings.vSyncCount = vSyncOn ? 1 : 0;
+
+        // Сохранить состояние VSync
+        PlayerPrefs.SetInt("VSyncSetting", vSyncOn ? 1 : 0);
+        PlayerPrefs.Save(); // Сохранить изменения на диск
     }
 
     public void SetFPSLimit(int fpsIndex)
     {
-        int fpsLimit = fpsIndex switch
+        int fps = fpsIndex switch
         {
             0 => 30,
             1 => 60,
@@ -128,17 +169,24 @@ isFullscreen ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed;
             4 => 120,
             5 => 144,
             6 => 165,
-            _ => -1,
+            7 => -1, // Разблокировать FPS
+            _ => -1, // По умолчанию разблокировать, если индекс вне диапазона
         };
 
-        if (fpsLimit == -1)
+        if (fps == -1)
         {
-            Application.targetFrameRate = -1; // Unlock FPS 
+            // Разблокировать FPS
+            Application.targetFrameRate = -1;
         }
         else
         {
-            Application.targetFrameRate = fpsLimit;
+            // Установить ограничение FPS
+            Application.targetFrameRate = fps;
         }
+
+        // Сохранить индекс FPS
+        PlayerPrefs.SetInt("FPSLimitIndex", fpsIndex);
+        PlayerPrefs.Save(); // Сохранить изменения на диск
     }
 
     private void AddResolution(int width, int height, string aspectRatio)
