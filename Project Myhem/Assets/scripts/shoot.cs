@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class shoot : MonoBehaviour
 {
@@ -15,16 +16,65 @@ public class shoot : MonoBehaviour
     public Transform bulletSpawn;
     public Camera _cam;
 
+    public int maxAmmo = 7;
+    private int currentAmmo;
+    public int totalAmmo = 120;
+    public float reloadTime = 1f;
+    private bool isReloading = false;
+
+    public Text ammoText;
+    public Slider reloadSlider; // Полоска перезарядки
+
+    void Start()
+    {
+        currentAmmo = maxAmmo;
+    }
+
     void Update()
     {
+        ammoText.text = currentAmmo + " / " + totalAmmo;
+
+        if (isReloading)
+            return;
+
+        if (currentAmmo <= 0 || Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(Reload());
+            return;
+        }
+
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
     }
 
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        Debug.Log("Reloading...");
+
+        reloadSlider.gameObject.SetActive(true); // Показываем полоску перезарядки
+        float reloadProgress = 0;
+        while (reloadProgress < reloadTime)
+        {
+            reloadProgress += Time.deltaTime;
+            reloadSlider.value = reloadProgress / reloadTime;
+            yield return null;
+        }
+
+        int ammoToReload = Mathf.Min(maxAmmo - currentAmmo, totalAmmo);
+        currentAmmo += ammoToReload;
+        totalAmmo -= ammoToReload;
+
+        reloadSlider.gameObject.SetActive(false); // Скрываем полоску перезарядки
+        isReloading = false;
+    }
+
     void Shoot()
     {
+        currentAmmo--;
+
         _audioSource.PlayOneShot(shotSFX);
         muzzleFlashe.Play();
 

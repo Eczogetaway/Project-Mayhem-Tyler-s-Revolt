@@ -16,8 +16,6 @@ ScriptsOnlyBuild:
     - menusetings
     - pause_menu
     - shoot
-    Unity.AI.Navigation.Editor.dll:
-    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.PlasticSCM.Editor.dll:
@@ -52,6 +50,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -96,6 +95,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
@@ -192,6 +192,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4924}
     - Class: 114
       Script: {instanceID: 4992}
+    - Class: 114
+      Script: {instanceID: 5044}
     - Class: 114
       Script: {instanceID: 5122}
     - Class: 114
@@ -393,7 +395,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7630}
     - Class: 114
-      Script: {instanceID: 27966}
+      Script: {instanceID: 31066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1515,7 +1517,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 7fc5c75e28a5a955c7b51e70b9ce9909
+      Hash: 6817462001ff81b5c13bdba41011bf72
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: shoot
@@ -1579,4 +1581,4 @@ ScriptsOnlyBuild:
   - Assets/Scene/Loading.unity
   - Assets/Scene/1 Level.unity
   playerPath: "C:/Users/strea/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/Project Myhem/Project Myhem.exe"
+    \u0441\u0442\u043E\u043B/Build/Project Myhem.exe"
