@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 167
+  controlID: 144
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -732,9 +732,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 737.72394, y: 46.86704, z: -3.5325937}
+    m_Target: {x: -6.2890315, y: -13.756405, z: 12.191083}
     speed: 2
-    m_Value: {x: 737.72394, y: 46.86704, z: -3.5325937}
+    m_Value: {x: -6.2890315, y: -13.756405, z: 12.191083}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -780,20 +780,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.18308015, y: -0.26236266, z: 0.053043652, w: 0.946569}
+    m_Target: {x: 0.35282436, y: -0.33200812, z: 0.13762905, w: 0.86460996}
     speed: 2
-    m_Value: {x: 0.18297414, y: -0.26221076, z: 0.053012937, w: 0.94602096}
+    m_Value: {x: 0.35261172, y: -0.33180803, z: 0.13754609, w: 0.86408883}
   m_Size:
-    m_Target: 109.55751
+    m_Target: 14.370863
     speed: 2
-    m_Value: 109.55751
+    m_Value: 14.370863
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 2
-    m_SpeedNormalized: 1
+    m_Speed: 1.8806001
+    m_SpeedNormalized: 0.94000006
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -850,7 +850,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 36eaffff90eaffff7eeeffff8aeeffffa4f0ffffc6f7ffff30fbffff405b0000265c0000525c0000465f0000
+      m_ExpandedIDs: fe75feff5276feffc67afeffd27afeffec7cfeff3cb3feff8252ffff62e5ffff30fbffff706400005e65000096650000046a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -919,7 +919,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/models
+    - Assets/scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -927,16 +927,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/models
+  - Assets/scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\Github\Project-Mayhem-Tyler-s-Revolt\Project Myhem
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c630000
-    m_LastClickedID: 25372
-    m_ExpandedIDs: 000000001c6300001e63000020630000226300002463000026630000286300002a6300002c6300002e6300003063000000ca9a3bffffff7f
+    m_SelectedIDs: 54630000
+    m_LastClickedID: 25428
+    m_ExpandedIDs: 000000001463000016630000186300001a6300001c6300001e63000020630000226300002463000026630000286300007e7a010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -964,7 +964,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c6300001e63000020630000226300002463000026630000286300002a6300002c6300002e63000030630000
+    m_ExpandedIDs: 000000001463000016630000186300001a6300001c6300001e6300002063000022630000246300002663000028630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1096,7 +1096,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 158
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

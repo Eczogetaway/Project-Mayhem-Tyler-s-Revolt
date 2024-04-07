@@ -51,6 +51,12 @@ public class shoot : MonoBehaviour
 
     IEnumerator Reload()
     {
+        if (totalAmmo <= 0) // Если у игрока нет патронов, то выходим из функции перезарядки
+        {
+            Debug.Log("No ammo left");
+            yield break;
+        }
+
         isReloading = true;
         Debug.Log("Reloading...");
 

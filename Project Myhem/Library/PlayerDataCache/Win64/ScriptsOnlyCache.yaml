@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AmmoPickup
     - ConversentionStarter
     - DialogueEditor.ConversationManager
     - DialogueEditor.NPCConversation
@@ -16,6 +17,8 @@ ScriptsOnlyBuild:
     - menusetings
     - pause_menu
     - shoot
+    Unity.AI.Navigation.Editor.dll:
+    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.PlasticSCM.Editor.dll:
@@ -226,6 +229,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7390}
     - Class: 114
       Script: {instanceID: 7630}
+    - Class: 114
+      Script: {instanceID: 32616}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -395,7 +400,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7630}
     - Class: 114
-      Script: {instanceID: 31066}
+      Script: {instanceID: 144772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1037,7 +1042,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: ec054fab53cf11aa5de66e08a0eb67d7
+      Hash: ab1f41df564d84b40bf06ce03a5d08af
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SC_FPSController
@@ -1575,10 +1580,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 071c209d874ef471e1414fb1ac2ed89e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AmmoPickup
   platform: 19
   scenePathNames:
   - Assets/Scene/Menu.unity
   - Assets/Scene/Loading.unity
   - Assets/Scene/1 Level.unity
   playerPath: "C:/Users/strea/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/Build/Project Myhem.exe"
+    \u0441\u0442\u043E\u043B/Project Myhem/Project Myhem.exe"
